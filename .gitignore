@@ -10,7 +10,7 @@
 /.idea/
 
 # Exclude documentation output
-/_build/
+/docs/_build/
 
 # coverage files
 .coverage

@@ -20,4 +20,4 @@ $ nosetests3
 
 ### Documentation ###
 
-Package documentation can be found [here](http://turig.iit.cnr.it/~valerio/egonetworks)
+Package documentation can be found [here](http://egonetworks.readthedocs.io)

@@ -55,7 +55,7 @@ class TwitterUserClassifier(object):
     def train_default_profile_classifier(self):
         """Train a classifier with the default training set provided with the module."""
         this_dir, this_filename = os.path.split(__file__)
-        train_filepath = os.path.join(this_dir, "datasets", "classified_profiles.csv")
+        train_filepath = os.path.join(this_dir, "..", "datasets", "classified_profiles.csv")
         self.train_random_forest_from_csv(train_filepath, header=True)
 
     def classify_user_from_profile(self, ego) -> int:

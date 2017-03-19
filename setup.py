@@ -10,14 +10,14 @@ setup(name='egonetworks',
       author_email='valerio.arnaboldi@iit.cnr.it',
       license='MIT',
       packages=['egonetworks'],
+      setup_requires=['numpy', 'cython'],
       install_requires=[
-          'numpy',
-          'scipy',
-          'sklearn',
-          'cython',
           'jenks',
           'tweepy',
-          'python-igraph'
+          'python-igraph',
+          'sklearn',
+          'scipy',
+          'numpy'
       ],
       dependency_links=[
           'git+https://github.com/perrygeo/jenks.git#egg=jenks'

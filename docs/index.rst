@@ -8,17 +8,18 @@ egonetworks -- Python package for Ego network structural analysis
 
 This package contains classes and functions for the structural analysis of ego networks.
 
-An ego network is a simple model that represents a social network at the personal level. This model considers the
-social relationships of an individual person (termed *ego*) that he or she maintains with other people (termed
-*alters*). Note that the model does not consider relationships between alters (aka mutual friendship relationships),
-but only the star topology of alters connected to the ego. See [1]_ and [2]_ for additional information about ego
-networks and ego network analysis.
+An ego network is a simple model that represents a social network from the point of view of an individual. This model
+considers only the social relationships that a focal node in the network (termed *ego*) maintains with other nodes
+(termed *alters*). Note that the model supported by this package does not consider relationships between alters (aka
+mutual friendship relationships), but only the star topology of alters connected to the ego. This ego network model is
+known as "Dunbar's ego network". See [1]_ and [2]_ for additional information about ego networks and ego network
+analysis.
 
-The package offers functions for the static and dynamic analysis of ego networks. For example, the package provides a
-function to obtain the "social circles" of the ego network, which are discrete groups of alters at similar level of
-tie strength with the ego. In addition, there are functions to analyse the dynamic evolution of ego networks and to
-calculate their stability over time. These functions are useful, for example, for the analysis of human behaviour in
-different social environments as well as to identify particularly active, dynamic or sociable people from their
+The package offers several methods for the static and dynamic analysis of ego networks. For example, the package
+provides a function to obtain the "social circles" of the ego network, which are discrete groups of alters at similar
+level of tie strength with the ego. In addition, there are functions to analyse the dynamic evolution of ego networks
+and to calculate their stability over time. These functions are useful, for example, for the analysis of human behaviour
+in different social environments as well as to identify particularly active, dynamic or sociable people from their
 communication traces.
 
 The package offers specialised classes for building and studying ego networks from Twitter data and from

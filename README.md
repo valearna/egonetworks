@@ -1,6 +1,6 @@
-# README #
+[![Build Status](https://travis-ci.org/valearna/egonetworks.svg?branch=master)](https://travis-ci.org/valearna/egonetworks) [![Coverage Status](https://coveralls.io/repos/github/valearna/egonetworks/badge.svg?branch=master)](https://coveralls.io/github/valearna/egonetworks?branch=master)
 
-Egonetworks - Python package for egocentric network analysis
+# Egonetworks - Python package for egocentric network analysis
 
 ### What is this repository for? ###
 

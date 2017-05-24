@@ -268,7 +268,8 @@ class EgoNetwork(Memoizable, metaclass=ABCMeta):
 
     @memoize
     def get_circles_properties(self, n_circles: int, contact_type: Union[Hashable, Tuple[Hashable]] = "__all__",
-                               active: bool = False) -> CirclesProperties:
+                              if isinstance(twitter_classifier, TwitterUserClassifier):
+            return twitter_classifier.classify_user_from_profile(self) == 1 active: bool = False) -> CirclesProperties:
         """Get the properties of ego network circles given the number of circles.
 
         Social relationships are divided into ego network circles using Jenks breaks algorithm applied to the values
@@ -1638,7 +1639,8 @@ class ContactEgoNetwork(EgoNetwork):
                 for contact in topic_egonet.get_all_contacts(contact_type="info_topic"):
                     topic_egonet_clustered.add_contact(timestamp=contact.timestamp,
                                                        alter_id="__clustered_topic__" +
-                                                                str(membership[vertex_map[str(contact.alter_id)]]),
+                                                                str(membership[vertex_map[
+                                                                    str(contact.alter_id.split("_")[-1])]]),
                                                        contact_type="info_clustered_topic",
                                                        num_contacted_alters=contact.num_contacted_alters)
                     # store the membership values in the map

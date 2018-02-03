@@ -3,7 +3,7 @@ numpy==1.11.0
 setuptools==21.1.0
 tweepy==3.5.0
 python_igraph==0.7.1.post6
-git+https://github.com/perrygeo/jenks.git#egg=jenks
+git+https://github.com/valearna/jenks.git#egg=jenks
 scipy==0.19.0
 scikit_learn==0.18.1
 typing==3.5.3.0

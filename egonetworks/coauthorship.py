@@ -50,16 +50,16 @@ class CoauthorshipNamedEgoNetwork(ContactEgoNetwork):
         else:
             return name_arr[0][0].lower() + " " + name_arr[-1].lower()
 
-    def add_publication(self, id:int, timestamp: int, title: str, coauthors: List[str], contact_type="__all__"):
+    def add_publication(self, pub_id: int, timestamp: int, title: str, coauthors: List[str], contact_type="__all__"):
         """Add a contact representing a publication coauthored by the ego to the ego network.
 
-        :param id: the id of the paper
+        :param pub_id: the id of the paper
         :param timestamp: the publication date in unix timestamp format
         :param title: the title of the publication
         :param coauthors: the list of coauthors' names
         :param contact_type: a value indicating the type of contact. Used to support ego networks with multiple types
             of social relationships
-        :type id: int
+        :type pub_id: int
         :type timestamp: int
         :type title: str
         :type coauthors: List[str]
@@ -78,4 +78,4 @@ class CoauthorshipNamedEgoNetwork(ContactEgoNetwork):
                 super(CoauthorshipNamedEgoNetwork, self).add_contact(timestamp=timestamp, alter_id=coauthor_name,
                                                                      contact_type=contact_type, text=title,
                                                                      num_contacted_alters=len(std_coauth_names))
-            self.publications[id] = (title, std_coauth_names)
+            self.publications[pub_id] = (title, std_coauth_names)

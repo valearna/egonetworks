@@ -6,7 +6,7 @@ import urllib.parse
 import urllib.request
 import json
 from collections import defaultdict
-from typing import List, Tuple, Union
+from typing import List, Union
 import itertools
 import threading
 from concurrent.futures import ThreadPoolExecutor

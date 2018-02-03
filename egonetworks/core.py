@@ -7,11 +7,11 @@ from bisect import bisect_left
 from jenks import jenks
 from typing import List, Tuple, Dict, Hashable, Iterator, Union
 import numpy as np
-from scipy.stats import lognorm, pearsonr
+from scipy.stats import lognorm
 from sklearn.cluster import MeanShift
 from egonetworks.error import *
 from egonetworks.generic import memoize, Memoizable, get_topics_from_text, get_topics_rel_network, \
-    synchronized_method, calculate_dispersion, calculate_burstiness, count_bursts, get_mean_persistence, get_exit_jumps
+    synchronized_method, calculate_dispersion, calculate_burstiness
 import egonetworks.similarity as lists
 from abc import ABCMeta, abstractmethod
 from collections import namedtuple, defaultdict, deque, Counter

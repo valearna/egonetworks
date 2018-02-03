@@ -8,7 +8,7 @@ from sklearn.ensemble import RandomForestClassifier
 from egonetworks.core import ContactEgoNetwork, ContactAdditionalInfo
 from egonetworks.error import *
 from egonetworks.generic import DictReaderWithHeader, memoize
-from typing import List, Dict, Iterator, Hashable, Tuple, Union
+from typing import List, Dict, Iterator, Hashable
 from collections import namedtuple, defaultdict
 import csv
 import json
@@ -682,8 +682,7 @@ class TweetsCsvReader(object):
                 row["created_at"], "%Y-%m-%d %H:%M:%S").timetuple()))
             if ego.last_time is None or downloaded_at > ego.last_time:
                 ego.last_time = downloaded_at
-        else:
-            yield ego
+        yield ego
 
 
 class ProfilesCsvReader(object):

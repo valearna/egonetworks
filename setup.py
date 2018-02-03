@@ -20,7 +20,7 @@ setup(name='egonetworks',
           'numpy'
       ],
       dependency_links=[
-          'git+https://github.com/perrygeo/jenks.git#egg=jenks'
+          'git+https://github.com/valearna/jenks.git#egg=jenks'
       ],
       test_suite='nose.collector',
       tests_require=['nose'],

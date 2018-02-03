@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/valearna/egonetworks.svg?branch=master)](https://travis-ci.org/valearna/egonetworks) [![Coverage Status](https://coveralls.io/repos/github/valearna/egonetworks/badge.svg?branch=master)](https://coveralls.io/github/valearna/egonetworks?branch=master)
+[![Build Status](https://travis-ci.org/valearna/egonetworks.svg?branch=master)](https://travis-ci.org/valearna/egonetworks) [![Coverage Status](https://coveralls.io/repos/github/valearna/egonetworks/badge.svg?branch=master)](https://coveralls.io/github/valearna/egonetworks?branch=master) [![Documentation Status](https://readthedocs.org/projects/egonetworks/badge/?version=latest)](http://egonetworks.readthedocs.io/en/latest/?badge=latest) 
 
 # Egonetworks - Python package for egocentric network analysis
 

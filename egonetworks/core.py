@@ -268,8 +268,7 @@ class EgoNetwork(Memoizable, metaclass=ABCMeta):
 
     @memoize
     def get_circles_properties(self, n_circles: int, contact_type: Union[Hashable, Tuple[Hashable]] = "__all__",
-                              if isinstance(twitter_classifier, TwitterUserClassifier):
-            return twitter_classifier.classify_user_from_profile(self) == 1 active: bool = False) -> CirclesProperties:
+                               active: bool = False) -> CirclesProperties:
         """Get the properties of ego network circles given the number of circles.
 
         Social relationships are divided into ego network circles using Jenks breaks algorithm applied to the values
